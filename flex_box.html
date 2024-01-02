@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>flex box</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #container1{
+            height: 150px;
+            width: 1000px;
+            background-color: chocolate;
+            padding: 11px;
+            margin: 5px;
+            border: 4px solid hotpink;
+           
+            display: flex;
+            flex-direction:row;}   /*all boxes in the same line*/
+
+            #container2{
+            height: 150px;
+            width: 1000px;
+            background-color: chocolate;
+            padding: 11px;
+            margin: 5px;
+            border: 4px solid hotpink;
+            
+            display: flex;
+            flex-direction:row-reverse;} /*all boxes in the same line*/
+
+            #container3{
+            height: 1000px;
+            width: 1000px;
+            background-color: chocolate;
+            padding: 11px;
+            margin: 5px;
+            border: 4px solid hotpink;
+            
+            display: flex;
+            flex-direction:column; /*all boxes in the same coloum*/
+        }
+
+            #container4{
+            height: 1000px;
+            width: 1000px;
+            background-color: chocolate;
+            padding: 11px;
+            margin: 5px;
+            border: 4px solid hotpink;
+           
+            display: flex;
+            flex-direction:column-reverse;} /*all boxes in the same coloum*/
+            
+        
+        .box{
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            margin: 5px;
+            border: 6px solid green;
+            /*background-color: aqua;*/
+            border-radius: 11px;
+            
+        }
+        #first{background-color:magenta;}
+        #second{background-color: blue;}
+        #third{background-color: gold;}
+        #fourth{background-color: aqua;}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">flex box</h1> <hr>
+    
+    <div id="container1">
+    <div id="first" class="box">first box</div>
+    <div id="second"class="box">second box</div>
+    <div id="third"class="box">third box</div>
+    <div id="fourth"class="box">fourth box</div>
+    <div>row</div>
+    <img src="flipkart.png" alt="flipkart" height="100px" >
+</div> <hr>
+
+   
+    <div id="container2">
+    <div id="first" class="box">first box</div>
+    <div id="second"class="box">second box</div>
+    <div id="third"class="box">third box</div>
+    <div id="fourth"class="box">fourth box</div> 
+<div>row-reverse</div>
+<img src="flipkart.png" alt="flipkart" height="100px">
+</div> <hr>
+
+  
+    <div id="container3">
+    <div id="first" class="box">first box</div>
+    <div id="second"class="box">second box</div>
+    <div id="third"class="box">third box</div>
+    <div id="fourth"class="box">fourth box</div> 
+<div>column</div>
+<img src="flipkart.png" alt="flipkart" height="100px">
+</div> <hr>
+
+    
+    <div id="container4">
+    <div id="first" class="box">first box</div>
+    <div id="second"class="box">second box</div>
+    <div id="third"class="box">third box</div>
+    <div id="fourth"class="box">fourth box</div> 
+    <div>column-reverse</div> 
+    <img src="flipkart.png" alt="flipkart" height="100px">
+</div><hr>
+</body>
+</html>

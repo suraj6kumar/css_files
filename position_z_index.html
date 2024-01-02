@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>position z index</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #first,#second{background-color: gold;
+         height: 100px;
+         width: 100px;
+         text-align: center;
+         border: 3px solid red;
+        }
+        #first{
+            position: absolute;
+            left: 120px;
+            top: 100px;
+            z-index: 4;     /*more z index then above other having lower z index*/
+
+        }
+         #second{
+            position: absolute;
+            left: 200px;
+            top: 150px;
+            z-index: 2;
+         }
+    </style>
+</head>
+<body>
+    <div id="first">first box</div>
+    <div id="second">second box</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>relative units in rem (for  font-size) </title>
+    <style>
+
+        *{margin: 0px; padding: 0px; font-size: 50px;}
+        
+        .box{ color: rebeccapurple;}
+        #outer{height: 500px;
+               width: 500px;
+               background-color: aqua;
+               font-size: 25px;
+        }
+        #inner{
+            height: 40%;
+            width: 50%;
+            background-color: brown;
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body> this is body
+     <div id="outer" class="box">outer BOX
+        <div id="inner" class="box">inner BOX </div>
+     </div>
+</body>
+</html>

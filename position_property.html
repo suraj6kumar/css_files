@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>position property</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box{background-color: orange;
+             height: 200px;
+             width: 200px;
+             margin: 30px;
+             text-align: center;   
+            }
+        #box1{
+            position: static; /*default*/
+        }
+        #box2{
+            position: relative;        /*relative to its default position*/
+            left: 200px;
+            top: 40px;  
+        }  
+        #box3{position: absolute;      /*from corner scrollable*/
+        top: 150px;
+           left: 1000px;
+        }    
+        #box4{
+            position: fixed;      /*not scrollable*/
+            left: 600px;
+            top: 400px;
+        }
+
+    </style>
+</head>
+<body>
+     <div id="box1" class="box">BOX1 static</div>
+     <div id="box2"class="box">BOX2 relative</div>
+     <div id="box3"class="box">BOX3 absolute</div>
+     <div id="box4"class="box">BOX4 fixed</div>
+     <div class="box">box</div>
+     <div class="box">box</div>
+
+</body>
+</html>

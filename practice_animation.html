@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice of animation progress bar</title>
+    <style>
+        .progress-container{
+            height: 30px;
+            width: 90%;
+            border: 4px solid black;
+            border-radius: 20px;
+            background-color: aqua;
+            position: relative;
+            top: 40px;
+        
+        }
+        .progress-bar{
+            height: 100%;
+            width: 30%;
+            border-radius: 20px;
+            background-color: magenta;
+
+            animation: progress 5s ease-in-out 0s 3 normal;
+        }
+
+        @keyframes progress {
+            0%{width: 30%;}
+            50%{width: 90%;}
+            100%{width: 100%;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" style="text-align: center;">Battery status</div>
+    </div>
+</body>
+</html>

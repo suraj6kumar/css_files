@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>media query min-width , max-width, combination of min and max</title>
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            border: 4px dashed gold;
+            background-color: red;
+        }
+
+        @media screen and (min-width:300px) {
+            #box {
+                height: 150px;
+                width: 150px;
+                border: 8px solid rgb(47, 0, 255);
+                background-color: red;
+            }
+        }
+
+        #boxa {
+            height: 100px;
+            width: 100px;
+            border: 4px dashed rgb(255, 0, 166);
+            background-color: rgb(0, 255, 94);
+        }
+
+        @media screen and (min-width:400px) and (max-width:800px) {
+            #boxa {
+
+                border: 5px dotted black;
+                border-radius: 50%;
+                background-color: red;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">box</div>
+    <div id="boxa">boxa</div>
+
+</body>
+
+</html>

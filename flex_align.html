@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>flex property align for verical setting </title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background-color: hotpink;
+            text-align: center;
+            border: 5px double gold;
+            border-radius: 3px;
+        }
+
+        .boxb {
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            background-color: hotpink;
+            text-align: center;
+            border: 5px double gold;
+            border-radius: 3px;
+        }
+
+        #container1 {
+            text-align: center;
+            height: 500px;
+            width: 1000px;
+            background-color: rebeccapurple;
+            margin: 33px;
+            display: flex;
+
+            justify-content: center;
+            /*for horizontal setting of box*/
+            align-items: center;
+            /*for vertical setting of box*/
+            justify-items: center;
+            /*for vertical setting of box*/
+        }
+
+        #third {
+            align-self: flex-end;
+            flex-shrink: 4;
+        }
+
+        #fifth {
+            align-self: flex-start;
+            flex-shrink: 0;
+        }
+
+        #seventh {
+            flex-shrink: 0.5;
+        }
+
+        #third3 {
+            flex-grow: 0.5;
+        }
+
+        #one {
+            background-color: red;
+            order: 4;
+        }
+
+        #two {
+            background-color: blue;
+            order: 3;
+        }
+
+        #three {
+            background-color: green;
+            order: 6;
+        }
+
+        #four {
+            background-color: gold;
+            order: 1;
+        }
+
+        #five {
+            background-color: aqua;
+            order: 7;
+        }
+
+        #six {
+            background-color: pink;
+            order: 2;
+        }
+
+        #seven {
+            background-color: purple;
+            order: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>shrink property of flex</h1>
+    <div id="container1">
+        <div id="first" class="box">first box</div>
+        <div id="second" class="box">second box</div>
+        <div id="third" class="box">third box</div>
+        <div id="fourth" class="box">fourth box</div>
+        <div id="fifth" class="box">fifth box</div>
+        <div id="sixth" class="box">sixth box</div>
+        <div id="seventh" class="box">seventh box</div>
+    </div>
+    <hr>
+
+    <h1>grow property of flex</h1>
+    <div id="container1">
+        <div id="first1" class="boxb">first box</div>
+        <div id="second2" class="boxb">second box</div>
+        <div id="third3" class="boxb">third box</div>
+        <div id="fourth4" class="boxb">fourth box</div>
+        <div id="fifth5" class="boxb">fifth box</div>
+        <div id="sixth6" class="boxb">sixth box</div>
+        <div id="seventh7" class="boxb">seventh box</div>
+    </div>
+    <hr>
+    <h1>order property of flex</h1>
+    <div id="container1">
+        <div id="one" class="boxb">first box</div>
+        <div id="two" class="boxb">second box</div>
+        <div id="three" class="boxb">third box</div>
+        <div id="four" class="boxb">fourth box</div>
+        <div id="five" class="boxb">fifth box</div>
+        <div id="six" class="boxb">sixth box</div>
+        <div id="seven" class="boxb">seventh box</div>
+    </div>
+</body>
+
+</html>

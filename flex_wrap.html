@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex wrap:- nowrap,wrap,reverse-wrap</title> 
+    <style>
+        *{margin: 0; padding: 0;}         /*if boxes are not fit then go to next line*/
+        .box{height: 200px;
+            width: 200px;
+            margin: 10px;
+            background-color:hotpink;
+            text-align: center;
+            border: 5px double gold;
+            border-radius: 3px;
+           
+        }
+        #container1{
+            text-align: center;
+            height: 500px;
+            width: 1000px;
+            background-color: rebeccapurple;
+            margin: 33px;
+            display: flex;
+            flex-wrap:nowrap; /*nowrap wrap wrap-reverse*/
+
+        }
+        #container2{
+            text-align: center;
+            height: 500px;
+            width: 1000px;
+            margin: 33px;
+            background-color: rebeccapurple;
+            display: flex;
+            flex-wrap:wrap; /*nowrap wrap wrap-reverse*/
+
+        }
+        #container3{
+            text-align: center;
+            height: 500px;
+            width: 1000px;
+            margin: 44px;
+            background-color: rebeccapurple;
+            display: flex;
+            flex-wrap:wrap-reverse; /*nowrap wrap wrap-reverse*/
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>this is nowrap</h1>
+    <div id="container1">
+        <div id="first" class="box">first box</div>
+        <div id="second" class="box">second box</div>
+        <div id="third" class="box">third box</div>
+        <div id="fourth" class="box">fourth box</div>
+        <div id="fifth" class="box">fifth box</div>
+        <div id="sixth" class="box">sixth box</div>
+        <div id="seventh" class="box">seventh box</div>
+    </div> 
+     <hr>
+
+       <h1>this is wrap</h1>
+    <div id="container2">
+        <div id="first" class="box">first box</div>
+        <div id="second" class="box">second box</div>
+        <div id="third" class="box">third box</div>
+        <div id="fourth" class="box">fourth box</div>
+        <div id="fifth" class="box">fifth box</div>
+        <div id="sixth" class="box">sixth box</div>
+        <div id="seventh" class="box">seventh box</div>
+     </div> <hr>
+
+    <h1>this is wrap-reverse</h1>
+    <div id="container3">
+        <div id="first" class="box">first box</div>
+        <div id="second" class="box">second box</div>
+        <div id="third" class="box">third box</div>
+        <div id="fourth" class="box">fourth box</div>
+        <div id="fifth" class="box">fifth box</div>
+        <div id="sixth" class="box">sixth box</div>
+        <div id="seventh" class="box">seventh box</div>
+
+    </div>
+</body>
+</html>

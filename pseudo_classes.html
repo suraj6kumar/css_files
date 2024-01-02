@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pseudo classes--hover,active,first-child</title>
+    <style>
+        #btn {
+            height: 45px;
+            width: 200px;
+            border: 6px solid blue;
+            border-radius: 11px 0px 11px 0px;
+            background-color: gold;
+            
+
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+            /*short hand:-- transition: all 5s ease-in-out 1s; */
+        }
+        #btn:hover{
+            height: 70px;
+            width: 300px;
+            border: 9px dashed magenta;
+            background-color: aqua;
+        }
+        #btn:active{
+            border: 6px double black;
+            background-color: rgb(213, 7, 7);
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.example.com" target="_blank">
+        <button id="btn">Pseudo class</button>
+    </a>
+    
+</body>
+
+</html>
